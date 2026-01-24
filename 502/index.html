@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<HTML>
+	<HEAD>
+		<TITLE>接続エラー</TITLE>
+
+		<LINK REL="stylesheet" HREF="/reset.css">
+
+		<STYLE>
+			:root{
+				--HEADER_HEIGHT: 95px;
+			}
+
+			body{
+				display: flex;
+				flex-direction: column;
+
+				margin: 0px;
+
+				width: 100vw;
+				height: 100vh;
+			}
+
+			.HEADER{
+				background-color: rgb(255, 255, 255);
+
+				width: 100vw;
+				height: var(--HEADER_HEIGHT);
+
+				margin-left: 100px;
+
+				flex: 1;
+			}
+
+			.HEADER > .HEADER_ERR_TEXT{
+				font-size: 50px;
+				font-weight: 100;
+			}
+
+			.CF_MITAINA_ARE{
+				margin-top: 10px;
+
+				background-color: rgb(214, 214, 214);
+
+				width: 100vw;
+				height: 300px;
+
+				overflow: hidden;
+
+				display: flex;
+
+				justify-content: center;
+				align-items: center;
+
+				flex: 5;
+			}
+
+			.CF_MITAINA_ARE > span{
+				text-align: center;
+
+				margin: 30px;
+			}
+
+			.CF_MITAINA_ARE > span > img{
+				width: 100px;
+				height: 100px;
+			}
+
+			.CF_MITAINA_ARE > span > .IP{
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			.CF_MITAINA_ARE > span > .NAME{
+				font-size: 30px;
+			}
+
+			.FOOTER{
+				flex: 5;
+
+				display: flex;
+				justify-content: center;
+			}
+
+			.FOOTER > div{
+				margin-left: 50px;
+			}
+		</STYLE>
+	</HEAD>
+	<BODY>
+		<DIV CLASS="HEADER">
+			<DIV CLASS="HEADER_ERR_TEXT">
+				502 Bad Gateway
+			</DIV>
+			リバースプロキシが、サーバーへのアクセスに失敗しました！
+		</DIV>
+		<DIV CLASS="CF_MITAINA_ARE">
+			<SPAN>
+				<IMG SRC="https://cdn.rumia.me/Asset/cdn-assets/IE.svg">
+				<DIV CLASS="IP">
+					あなた
+				</DIV>
+				<DIV CLASS="NAME">
+					ブラウザー
+				</DIV>
+				<DIV STYLE="color: rgb(7, 196, 0);">
+					おｋ
+				</DIV>
+			</SPAN>
+			<SPAN>
+				<IMG SRC="https://cdn.rumia.me/Asset/cdn-assets/RP.svg">
+				<DIV CLASS="IP">
+					192.168.0.3
+				</DIV>
+				<DIV CLASS="NAME">
+					リバースプロクシ
+				</DIV>
+				<DIV STYLE="color: rgb(7, 196, 0);">
+					おｋ
+				</DIV>
+			</SPAN>
+			<SPAN>
+				<IMG SRC="https://cdn.rumia.me/Asset/cdn-assets/SV.svg">
+				<DIV CLASS="IP">
+					192.168.0.XXX
+				</DIV>
+				<DIV CLASS="NAME">
+					鯖
+				</DIV>
+				<DIV STYLE="color: rgb(255, 88, 88);">
+					¡Бля!
+				</DIV>
+			</SPAN>
+		</DIV>
+		<DIV CLASS="FOOTER">
+			<DIV>
+				<H1>なにが起きたし</H1>
+				端的に言えばサーバーが死にました！
+			</DIV>
+			<DIV>
+				<H1>どうすればいい？</H1>
+				サーバーが生き返るまで待っていてください！<BR>
+				もし、管理者が気づいていない場合は教えてあげてください。<BR>
+				<BR>
+				↓それまで之でも聞いていてください↓<BR>
+				<VIDEO SRC="/__error/502/nepipi_voice.mov" STYLE="width: auto; height: 200px;" controls></VIDEO>
+				<VIDEO SRC="/__error/502/nepipi2.MOV" STYLE="width: auto; height: 200px;" controls></VIDEO>
+				<VIDEO SRC="/__error/502/nepipi_himei.MOV" STYLE="width: auto; height: 200px;" controls></VIDEO>
+			</DIV>
+		</DIV>
+	</BODY>
+</HTML>
