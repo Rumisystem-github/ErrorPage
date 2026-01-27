@@ -1,150 +1,86 @@
 <!DOCTYPE html>
 <HTML>
 	<HEAD>
-		<TITLE>接続エラー</TITLE>
+		<TITLE>502 接続エラー</TITLE>
 
-		<LINK REL="stylesheet" HREF="/reset.css">
+		<LINK REL="stylesheet" HREF="https://cdn.rumia.me/CSS/reset.css">
+		<LINK REL="stylesheet" HREF="https://cdn.rumia.me/CSS/DEFAULT.css">
 
 		<STYLE>
-			:root{
-				--HEADER_HEIGHT: 95px;
-			}
-
-			body{
-				display: flex;
-				flex-direction: column;
-
-				margin: 0px;
-
-				width: 100vw;
-				height: 100vh;
-			}
-
 			.HEADER{
-				background-color: rgb(255, 255, 255);
+				margin: auto;
 
-				width: 100vw;
-				height: var(--HEADER_HEIGHT);
-
-				margin-left: 100px;
-
-				flex: 1;
+				width: calc(100vw - 400px);
 			}
 
-			.HEADER > .HEADER_ERR_TEXT{
-				font-size: 50px;
-				font-weight: 100;
-			}
-
-			.CF_MITAINA_ARE{
-				margin-top: 10px;
-
-				background-color: rgb(214, 214, 214);
-
-				width: 100vw;
-				height: 300px;
-
-				overflow: hidden;
-
+			.CF_NO_ARE{
 				display: flex;
 
-				justify-content: center;
-				align-items: center;
+				background-color: #EBEBEB;
 
-				flex: 5;
-			}
+				width: 100%;
 
-			.CF_MITAINA_ARE > span{
 				text-align: center;
-
-				margin: 30px;
-			}
-
-			.CF_MITAINA_ARE > span > img{
-				width: 100px;
-				height: 100px;
-			}
-
-			.CF_MITAINA_ARE > span > .IP{
-				margin-top: 10px;
-				margin-bottom: 10px;
-			}
-
-			.CF_MITAINA_ARE > span > .NAME{
-				font-size: 30px;
-			}
-
-			.FOOTER{
-				flex: 5;
-
-				display: flex;
 				justify-content: center;
+				gap: 10px;
+
+				padding-top: 20px;
+				padding-bottom: 20px;
 			}
 
-			.FOOTER > div{
-				margin-left: 50px;
+			.CF_NO_ARE > div > img{
+				width: 45px;
+				height: 45px;
+			}
+
+			.DESCRIPTION{
+				display: flex;
+				flex-direction: row;
+			}
+
+			.DESCRIPTION > div > video{
+				height: 100px;
 			}
 		</STYLE>
 	</HEAD>
 	<BODY>
 		<DIV CLASS="HEADER">
-			<DIV CLASS="HEADER_ERR_TEXT">
-				502 Bad Gateway
-			</DIV>
-			リバースプロキシが、サーバーへのアクセスに失敗しました！
+			<H1>サーバーが落ちています</H1>
+			<A HREF="https://status.rumia.me/">サービスのステータスはこちら</A>
 		</DIV>
-		<DIV CLASS="CF_MITAINA_ARE">
-			<SPAN>
-				<IMG SRC="https://cdn.rumia.me/Asset/cdn-assets/IE.svg">
-				<DIV CLASS="IP">
-					あなた
-				</DIV>
-				<DIV CLASS="NAME">
-					ブラウザー
-				</DIV>
-				<DIV STYLE="color: rgb(7, 196, 0);">
-					おｋ
-				</DIV>
-			</SPAN>
-			<SPAN>
-				<IMG SRC="https://cdn.rumia.me/Asset/cdn-assets/RP.svg">
-				<DIV CLASS="IP">
-					192.168.0.3
-				</DIV>
-				<DIV CLASS="NAME">
-					リバースプロクシ
-				</DIV>
-				<DIV STYLE="color: rgb(7, 196, 0);">
-					おｋ
-				</DIV>
-			</SPAN>
-			<SPAN>
-				<IMG SRC="https://cdn.rumia.me/Asset/cdn-assets/SV.svg">
-				<DIV CLASS="IP">
-					192.168.0.XXX
-				</DIV>
-				<DIV CLASS="NAME">
-					鯖
-				</DIV>
-				<DIV STYLE="color: rgb(255, 88, 88);">
-					¡Бля!
-				</DIV>
-			</SPAN>
-		</DIV>
-		<DIV CLASS="FOOTER">
+
+		<DIV CLASS="CF_NO_ARE">
 			<DIV>
-				<H1>なにが起きたし</H1>
-				端的に言えばサーバーが死にました！
+				<IMG>
+				<DIV>貴様</DIV>
+				<DIV>生</DIV>
 			</DIV>
 			<DIV>
-				<H1>どうすればいい？</H1>
-				サーバーが生き返るまで待っていてください！<BR>
-				もし、管理者が気づいていない場合は教えてあげてください。<BR>
+				<IMG>
+				<DIV>rrrr.aa0.netvolante.jp</DIV>
+				<DIV>生</DIV>
+			</DIV>
+			<DIV>
+				<IMG>
+				<DIV>サーバー</DIV>
+				<DIV>死</DIV>
+			</DIV>
+		</DIV>
+
+		<DIV CLASS="DESCRIPTION">
+			<DIV>
+				<H2>何が起きた？</H2>
+				サーバーが落ちました。<BR>
 				<BR>
-				↓それまで之でも聞いていてください↓<BR>
-				<VIDEO SRC="/__error/502/nepipi_voice.mov" STYLE="width: auto; height: 200px;" controls></VIDEO>
-				<VIDEO SRC="/__error/502/nepipi2.MOV" STYLE="width: auto; height: 200px;" controls></VIDEO>
-				<VIDEO SRC="/__error/502/nepipi_himei.MOV" STYLE="width: auto; height: 200px;" controls></VIDEO>
+				メンテナンス時は503が出るため、<BR>
+				これはメンテナンスではないことを示します。
+			</DIV>
+			<DIV>
+				<H2>どうすればいい？</H2>
+				復活するまでこれでも見ててください！<BR>
+				<VIDEO controls SRC="/__error/502/nepipi_himei.MOV"></VIDEO>
+				<VIDEO controls SRC="/__error/502/nepipi_voice.mov"></VIDEO>
+				<VIDEO controls SRC="/__error/502/nepipi2.MOV"></VIDEO>
 			</DIV>
 		</DIV>
 	</BODY>
